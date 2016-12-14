@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Knitv1</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="company_type_arrays">
+        <item>Choose a type</item>
+        <item>Export</item>
+        <item>Printing</item>
+        <item>Dyeing</item>
+
+    </string-array>
+
+
+
+</resources>

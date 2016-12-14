@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_company"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Company Details" />
+        <item
+            android:id="@+id/nav_inward"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Yarn Received" />
+        <item
+            android:id="@+id/nav_outward"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Yarn Delivery" />
+        <item
+            android:id="@+id/nav_production"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Production" />
+        <item
+            android:id="@+id/nav_billing"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Billing" />
+    </group>
+
+    <item android:title="Extras">
+        <menu>
+            <item
+                android:id="@+id/print"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Print" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
