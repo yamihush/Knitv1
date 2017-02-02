@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">चोटी</string>
+    <string name="action_settings">सेटिंग</string>
+    <string name="welcome_text">आपका स्वागत है!</string>
+    <string name="company_details">कंपनी विवरण</string>
+    <string name="yarn_received">धागा लिया गया</string>
+    <string name="yarn_delivery">पुस्तक वितरण</string>
+    <string name="production">विनिर्माण</string>
+    <string name="billing">बिलिंग</string>
+    <string name="Print">छाप</string>
+    <string name="send" >भेजना</string>
+    <string name="Last_Name">अंतिम नाम</string>
+    <string name="Company_Name">कंपनी का नाम</string>
+    <string name="Contact_no">मोबाइल फोन नंबर</string>
+    <string name="Email_Address">ईमेल एड्रेस</string>
+    <string name="Save">सहेजें</string>
+    <string name="No_Records_Found">\ "नहीं किसी भी रिकॉर्ड पाया \"</string>
+    <string name="First_Name">पहला नाम</string>
+    <string name="Company_type">कंपनी के प्रकार</string>
+    <string name="Full_Nmae">पूरा नाम</string>
+
+</resources>

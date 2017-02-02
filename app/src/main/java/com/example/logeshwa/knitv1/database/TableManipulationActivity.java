@@ -7,7 +7,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.text.TextUtils;
 import android.util.Log;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,6 +18,8 @@ import android.widget.Toast;
 
 import com.example.logeshwa.knitv1.R;
 import com.example.logeshwa.knitv1.fragment.addCompanyFragment;
+
+import java.util.regex.Pattern;
 
 import static android.content.ContentValues.TAG;
 
@@ -63,9 +67,51 @@ public class TableManipulationActivity extends Activity {
             }
         });
     }
+    private boolean isValidEmail(CharSequence email) {
+        if (!TextUtils.isEmpty(email)) {
+            return Patterns.EMAIL_ADDRESS.matcher(email).matches();
+        }
+        return false;
+    }
+
+    private boolean isValidMobile(String phone2)
+    {
+
+        CharSequence cs = phone2;
+        boolean check=false;
+        if(!Pattern.matches("[a-zA-Z]+",cs))
+         {
+            if(phone2.length() < 6 || phone2.length() > 13)
+            {
+                check = false;
+                etPhone.setError("Not Valid Number");
+            }
+            else
+            {
+                check = true;
+            }
+         }
+        else
+        {
+            check=false;
+        }
+        return check;
+    }
+
 
     private void onButtonClick() {
-        if (etFirstname.getText().toString().equals("") || etLastname.getText().toString().equals("") || etEmail.getText().toString().equals("") || etCompanyName.getText().toString().equals("") || etPhone.getText().toString().equals("")) {
+        String STphone = etPhone.getText().toString();
+        CharSequence csemail = etEmail.getText().toString();
+
+        if(!isValidMobile(STphone)) {
+            //Toast.makeText(getApplicationContext(), "Enter Vaild Phone number", Toast.LENGTH_LONG).show();
+           // etPhone.selectAll();
+        }else if(!isValidEmail(csemail)){
+
+            //Toast.makeText(getApplicationContext(), "Enter Vaild EMail ID", Toast.LENGTH_LONG).show();
+
+            etEmail.setError("Not a Valid Email");
+        }else if (etFirstname.getText().toString().equals("") || etLastname.getText().toString().equals("") || etEmail.getText().toString().equals("") || etCompanyName.getText().toString().equals("") || etPhone.getText().toString().equals("")) {
             Toast.makeText(getApplicationContext(), "Add All Fields", Toast.LENGTH_LONG).show();
         } else {
             Intent intent = new Intent();
@@ -76,6 +122,7 @@ public class TableManipulationActivity extends Activity {
             intent.putExtra(Constants.COMPANY_TYPE, etCompanytype.getSelectedItem().toString());
             intent.putExtra(Constants.PHONE_NO, etPhone.getText().toString());
             //Log.d(TAG, "onButtonClick: "+ etCompanyName.getText().toString()+ etCompanytype.getSelectedItem().toString()+etPhone.getText().toString());
+            Toast.makeText(getApplicationContext(), "Company Added!", Toast.LENGTH_LONG).show();
             setResult(RESULT_OK, intent);
             finish();
         }

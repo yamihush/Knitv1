@@ -31,7 +31,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="company"
+                    android:text="@string/company_details"
                     android:textColor="#000000"
                     android:textSize="20dp"
                     android:textStyle="bold" />
@@ -45,7 +45,7 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="15dp"
                     android:gravity="center"
-                    android:text="No Records Found"
+                    android:text="@string/No_Records_Found"
                     android:textColor="#000000"
                     android:textSize="15dp" />
 

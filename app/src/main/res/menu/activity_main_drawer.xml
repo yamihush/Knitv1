@@ -5,23 +5,23 @@
         <item
             android:id="@+id/nav_company"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Company Details" />
+            android:title="@string/company_details" />
         <item
             android:id="@+id/nav_inward"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Yarn Received" />
+            android:title="@string/yarn_received" />
         <item
             android:id="@+id/nav_outward"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Yarn Delivery" />
+            android:title="@string/yarn_delivery" />
         <item
             android:id="@+id/nav_production"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Production" />
+            android:title="@string/production" />
         <item
             android:id="@+id/nav_billing"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Billing" />
+            android:title="@string/billing" />
     </group>
 
     <item android:title="Extras">
@@ -29,11 +29,11 @@
             <item
                 android:id="@+id/print"
                 android:icon="@drawable/ic_menu_gallery"
-                android:title="Print" />
+                android:title="@string/Print" />
             <item
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:title="@string/send" />
         </menu>
     </item>
 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">సెట్టింగులు</string>
+    <string name="welcome_text">స్వాగతం!</string>
+    <string name="company_details">కంపెనీ వివరాలు</string>
+    <string name="yarn_received">నూలు స్వీకరించిన</string>
+    <string name="yarn_delivery">నూలు డెలివరీ</string>
+    <string name="production">ఉత్పత్తి</string>
+    <string name="billing">బిల్లింగ్</string>
+    <string name="Print">ప్రింట్</string>
+    <string name="send">పంపండి</string>
+    <string name="Last_Name">చివరి పేరు</string>
+    <string name="Company_Name">కంపెనీ పేరు</string>
+    <string name="Contact_no">మొబైల్ లేవు</string>
+    <string name="Email_Address">ఇమెయిల్ అడ్రస్</string>
+    <string name="Save">సేవ్</string>
+    <string name="No_Records_Found">ఎటువంటి పత్రాలు లభించలేదు</string>
+    <string name="First_Name">మొదటి పేరు</string>
+    <string name="app_name">అల్లడం</string>
+    <string name="Company_type">సంస్థ టైప్</string>
+    <string name="Full_Nmae">పూర్తి పేరు</string>
+
+</resources>

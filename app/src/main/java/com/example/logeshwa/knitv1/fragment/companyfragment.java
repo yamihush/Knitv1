@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -85,7 +86,7 @@ public class companyfragment extends Fragment {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, "test", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(context, "test", Toast.LENGTH_SHORT).show();
 
                 onAddRecord(context);
             }
@@ -100,7 +101,7 @@ public class companyfragment extends Fragment {
         Intent intent = new Intent(con, TableManipulationActivity.class);
         intent.putExtra(Constants.DML_TYPE, Constants.INSERT);
         startActivityForResult(intent, Constants.ADD_RECORD);
-        Toast.makeText(con, "on add record", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(con, "on add record", Toast.LENGTH_SHORT).show();
         displayAllRecords();
     }
 
@@ -157,7 +158,7 @@ public class companyfragment extends Fragment {
                 holder.companyname = contactModel.getCompanyName();
                 holder.companytype = contactModel.getCompanyType();
                 holder.phone = contactModel.getPhoneNo();
-                String personName = "Compnay Name: " + holder.companyname + "\nCompany Type: " + holder.companytype + "\nPerson Name:"   + holder.firstname + "." + holder.lastname + " \nMobile No: " + holder.phone + " \nEmail ID: " + holder.emailadd;
+                String personName = getString(R.string.Company_Name) +" : " + holder.companyname + "\n"+getString(R.string.Company_type) + " : " + holder.companytype + "\n" + getString(R.string.Full_Nmae) + " : "   + holder.firstname + "." + holder.lastname + " \n" + getString(R.string.Contact_no) + " : " + holder.phone + " \n" + getString(R.string.Email_Address) + " : " + holder.emailadd;
                 holder.tvName.setText(personName);
 
                 //final CharSequence[] items = {Constants.UPDATE, Constants.DELETE};
@@ -168,7 +169,7 @@ public class companyfragment extends Fragment {
         }
 
 
-        Toast.makeText(context1, "Display all records", Toast.LENGTH_SHORT).show();
+       // Toast.makeText(context1, "Display all records", Toast.LENGTH_SHORT).show();
 
 
     }

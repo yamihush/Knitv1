@@ -19,6 +19,7 @@ import android.widget.Toast;
 import com.example.logeshwa.knitv1.R;
 import com.example.logeshwa.knitv1.fragment.companyfragment;
 import com.example.logeshwa.knitv1.fragment.machinedetails;
+import com.example.logeshwa.knitv1.fragment.yarnRecevieFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -95,16 +96,18 @@ public class MainActivity extends AppCompatActivity
             fragment = new companyfragment();
 
 
-            Toast.makeText(this,"Company Fragmnet",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Company List",Toast.LENGTH_SHORT).show();
 
             //svinp.rest();
 
             // Handle the company  action
 
         } else if (id == R.id.nav_inward) {
-            fragment = new machinedetails();
+            fragment = new yarnRecevieFragment();
 
         } else if (id == R.id.nav_outward) {
+
+            fragment = new machinedetails();
 
         } else if (id == R.id.nav_billing) {
 

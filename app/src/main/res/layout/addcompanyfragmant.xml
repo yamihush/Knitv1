@@ -31,40 +31,76 @@
                         android:id="@+id/etFirstName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="First Name"
-                        android:inputType="textCapWords" />
+                        android:hint="@string/First_Name"
+                        android:inputType="textCapWords"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:ems="15"
+                        android:background="@drawable/edit_text_design"
+
+                        />
 
                     <EditText
                         android:id="@+id/etLastname"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Last Name"
+                        android:hint="@string/Last_Name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:ems="15"
+                        android:background="@drawable/edit_text_design"
                         android:inputType="textCapWords" />
                     <EditText
                         android:id="@+id/etCompanyName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Company Name"
+                        android:hint="@string/Company_Name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:ems="15"
+                        android:background="@drawable/edit_text_design"
                         android:inputType="textCapWords"/>
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="phone"
-                        android:hint="Contact no"
-                        android:ems="10"
+                        android:hint="@string/Contact_no"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:ems="15"
+                        android:background="@drawable/edit_text_design"
                         android:id="@+id/etPhone" />
                     <Spinner
                         android:id="@+id/etCompanytype"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:ems="15"
+                        android:background="@drawable/edit_text_design"
                         android:entries="@array/company_type_arrays" />
                     <EditText
                         android:id="@+id/etEmail"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textEmailAddress"
-                        android:ems="10"
-                        android:hint="Email Address" />
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:ems="15"
+                        android:background="@drawable/edit_text_design"
+                        android:hint="@string/Email_Address" />
 
 
                 </LinearLayout>
@@ -78,7 +114,7 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Save"
+        android:text="@string/Save"
         android:textColor="#000000"
         android:textStyle="bold"/>
 

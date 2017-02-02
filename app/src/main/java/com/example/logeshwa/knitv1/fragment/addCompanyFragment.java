@@ -101,7 +101,11 @@ public class addCompanyFragment extends Fragment {
         });
     }
 
+
+
     private void onButtonClick(Context con) {
+
+
         if (etFirstname.getText().toString().equals("") || etLastname.getText().toString().equals("") || etEmail.getText().toString().equals("") ) {
             Toast.makeText(con, "Add All Fields", Toast.LENGTH_LONG).show();
         } else {

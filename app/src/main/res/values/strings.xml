@@ -1,10 +1,33 @@
 <resources>
-    <string name="app_name">Knitv1</string>
+    <string name="app_name">Knitting</string>
 
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="welcome_text">Welcome !</string>
+    <string name="company_details">Company Details</string>
+    <string name="yarn_received">Yarn Received</string>
+    <string name="yarn_delivery">Yarn Delivery</string>
+    <string name="production">Production</string>
+    <string name="billing">Billing</string>
+    <string name="Print">Print</string>
+    <string name="send">Send</string>
+    <string name="Last_Name">Last Name</string>
+    <string name="Company_Name">Company Name</string>
+    <string name="Contact_no">Mobile No</string>
+    <string name="Email_Address">Email Address</string>
+    <string name="Save">Save</string>
+    <string name="No_Records_Found">No Records Found</string>
+    <string name="First_Name">First Name</string>
+    <string name="Full_Nmae">Full Name</string>
+    <string name="Company_type">Company Type</string>
+    <string name="Mill_Name">Mill Name</string>
+    <string name="Counts">Counts</string>
+    <string name="No_of_bags">No Of Bags</string>
+    <string name="Per_Bag_weight">Per Bag Weight</string>
+    <string name="Total_Kgs">Total Killo grams</string>
+
 
     <string-array name="company_type_arrays">
         <item>Choose a type</item>

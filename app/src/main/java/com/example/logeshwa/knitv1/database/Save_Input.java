@@ -36,7 +36,7 @@ public class Save_Input extends AppCompatActivity {
         FragmentManager manager = getSupportFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();
         Fragment fragment = new companyfragment();
-        Toast.makeText(this,"came inside  save input 1",Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this,"came inside  save input 1",Toast.LENGTH_SHORT).show();
 
         transaction.replace(R.id.fragmenthome,fragment);
         transaction.commit();
